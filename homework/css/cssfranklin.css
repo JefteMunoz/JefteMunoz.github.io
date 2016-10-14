@@ -6,6 +6,11 @@ body {
     background-color: /*some sort of blue that goes with the logo*/
 }
 
+header {
+    padding-left: 1em;
+    background-image: image(/images/cloudsbg.png)
+}
+
 #compname {
     font-size: 50px;
     text-decoration-style: solid;
