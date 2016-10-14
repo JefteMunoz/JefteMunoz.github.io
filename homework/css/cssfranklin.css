@@ -1,19 +1,27 @@
 body {
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    background-color: /*some sort of blue that goes with the logo*/
+    background-color: deepskyblue;
+    margin: 2px;
 }
 
 header {
-    padding-left: 1em;
-    background-image: image(/images/cloudsbg.png)
+    background-image: src="../images/cloudsbg.css"
 }
 
-#compname {
-    font-size: 50px;
-    text-decoration-style: solid;
+.compname {
+    font-size: 5px;
+}
+
+nav {
+    font-size: 5px;
+    text-align: center;
+    background-color: burlywood;
+    border: .5px solid #000000;
+
+}
+
+p {
+    font-size: 5px;
+    border: .5px solid #000000;
 
 }
 
