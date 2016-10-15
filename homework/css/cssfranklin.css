@@ -25,11 +25,12 @@ nav {
 }
 
 #temphere {
-    font-size: 18px;
+    font-size: 20px;
     background-color: burlywood;
     margin-top: 0px;
     margin-bottom: 2em;
-    background-image: url(../images/weather.png)
+    background-image: url(/images/sunnyday.png);
+    padding: 0em 0em 4em 0em;
 }
 
 #article {
