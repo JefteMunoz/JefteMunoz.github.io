@@ -1,27 +1,39 @@
 body {
     background-color: deepskyblue;
-    margin: 2px;
 }
 
-header {
-    background-image: src="../images/cloudsbg.css"
+header h1 {
+    display: inline;
 }
 
 .compname {
-    font-size: 5px;
+    font-size: 55px;
 }
 
 nav {
-    font-size: 5px;
+    font-size: 18px;
     text-align: center;
     background-color: burlywood;
-    border: .5px solid #000000;
+    border: solid #000000;
 
 }
 
-p {
-    font-size: 5px;
-    border: .5px solid #000000;
-
+#town {
+    font-size: 30px;
+    box-sizing: content-box;
+    margin: 30px 0px 0px 0px;
 }
+
+#temphere {
+    font-size: 18px;
+    background-color: burlywood;
+    margin-top: 0px;
+    margin-bottom: 2em;
+    background-image: url(../images/weather.png)
+}
+
+#article {
+    font-size: 18px;
+}
+
 
