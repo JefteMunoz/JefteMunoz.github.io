@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    background-color: burlywood;
+    font-size: 0em 4em 0em 4em;
+}
+
+nav {
+    border: 0;
+    margin-top: 0em;
+    text-align: center;
+    font-size: 18px;
+}
+
+main {
+    font-size: 24px;
+}
+
+#breakpoint {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        display: none;
+    }
+
+    #breakpoint {
+        display:
+    }
+}
