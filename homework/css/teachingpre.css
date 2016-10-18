@@ -1,0 +1,25 @@
+body {
+    margin: 0em 4em;
+    background-color: limegreen;
+    padding: 1em;
+}
+
+header {
+    background-color: dodgerblue;
+    font-size: 28px;
+}
+
+#hp {
+    margin-top: 2em;
+}
+
+h1 {
+    display: inline;
+}
+
+h2 {
+}
+
+#imgone {
+    margin: center;
+}

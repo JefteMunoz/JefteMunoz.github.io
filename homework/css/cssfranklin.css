@@ -10,6 +10,7 @@ header h1 {
     font-size: 55px;
 }
 
+
 nav {
     font-size: 18px;
     text-align: center;
@@ -46,26 +47,3 @@ footer {
 #rex {
     margin: 0em 1em 1em 1em;
 }
-
-@media screen and (max-width: 568px) {
-    body { background-color: deepskyblue; }
-    header h1 { display: inline; }
-    .compname { font-size: 55px; }
-    nav { font-size: 18px;
-        text-align: center;
-        background-color: burlywood;
-        border: solid #000000;}
-    #temphere { font-size: 20px;
-        background-color: burlywood;
-        margin-top: 0;
-        margin-bottom: 1em;
-        background-image: url(/images/sunnyday.png);
-        padding: 0em 0em 4em 0em;
-        margin-right: 1em;
-        margin-left: 1em;}
-    #article { font-size: 18px; }
-    footer { text-align: center; }
-    #rex { margin: 0em 1em 1em 1em; }
-
-}
-
