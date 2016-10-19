@@ -1,25 +1,88 @@
 body {
-    margin: 0em 4em;
+    margin: 0em;
     background-color: limegreen;
     padding: 1em;
 }
 
 header {
     background-color: dodgerblue;
-    font-size: 28px;
+    font-size: 16px;
+}
+
+header img {
+    width: 100%
 }
 
 #hp {
-    margin-top: 2em;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 24px;
 }
 
-h1 {
-    display: inline;
+.tit {
+    font-size: 26px;
 }
 
-h2 {
+.par {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#code {
+    font-size: 20px;
+    text-align: center;
 }
 
 #imgone {
-    margin: center;
+    display: none;
+}
+
+#imgtwo {
+    display: none;
+}
+
+#ex {
+    text-align: center;
+}
+
+#exa {
+    text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        margin: 0em 4em;
+        background-color: limegreen;
+        padding: 1em;
+    }
+
+    header {
+        background-color: dodgerblue;
+        font-size: 2em;
+    }
+
+    header img {
+        width: 200px;
+        height: 165px;
+    }
+
+    #hp {
+        margin-top: 20px;
+    }
+
+    h1 {
+        display: inline;
+    }
+
+    h2 {
+    }
+
+    #imgone {
+        display: block;
+
+    }
+
+    #imgtwo {
+        display: block;
+    }
 }

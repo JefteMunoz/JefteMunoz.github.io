@@ -13,18 +13,18 @@
         <h1>CIT 230 - CSS: Breakpoint </h1> </header>
     <nav id="hp"> <a href="../index.html"> Student Homepage </a> </nav>
     <main>
-        <h2> What are breakpoints? </h2>
+        <h2 class="tit"> What are breakpoints? </h2>
         <p class="par"> Breakpoints are <strong> the point </strong> at which your sites content will respond to provide the user with the best possible layout to consume the information in different devices. </p>
-        <h2> How is a breakpoint applied? </h2>
-        <p> A media query is required to have a breakpoint. A media query is the key ingredient that, in it's simplest form, allows specified CSS to be applied depending on the device and whether it matches the media query criteria. This is how a media query looks like: </p>
-        <div> @media only screen and
-            <mark> (min-width: 480px); </mark>
-        </div>
-        <p> A media query should also be written at the bottom of the main CSS styling code. When a brekpoint takes action it overruns any code that was elected to be altered after the breakpoint. </p>
-        <div id=imgone> <img alt="CSS code" src="../images/w3scss.png" width="100%" height="750"> </div>
-        <div id=imgtwo> <img alt="CSS media&breakpoint" src="../images/w3sbreak.png" width="100%" height="750"> </div>
+        <h2 class="tit"> How is a breakpoint applied? </h2>
+        <p class="par"> A media query is required to have a breakpoint. A media query is the key ingredient that, in it's simplest form, allows specified CSS to be applied depending on the device and whether it matches the media query criteria. This is how a media query looks like: </p>
+        <p id="code"> @media only screen and
+            <mark> (min-width: 480px){} </mark> </p>
+
+        <p class="par"> A media query should be written at the bottom of the main CSS styling code. When a brekpoint takes action it overruns any code that was elected to be altered. </p>
+        <div id=imgone> <img alt="CSS code" src="../images/w3scss.png"> </div>
+        <div id=imgtwo> <img alt="CSS media&breakpoint" src="../images/w3sbreak.png"> </div>
         <nav id="examples">
-            <h3> Examples </h3> <a href="w3sexample.html"> W3S Example </a> | <a href="../homework/tpexone.html"> Another Example </a> </nav>
+            <h3 class="tit" id="ex"> Examples </h3> <div id="exa"> <a href="w3sexample.html"> W3S Example </a> | <a href="../homework/tpexone.html"> Another Example </a> </nav> </div>
     </main>
     <footer>
         <p id="sources"> <strong> Sources </strong> </p>
