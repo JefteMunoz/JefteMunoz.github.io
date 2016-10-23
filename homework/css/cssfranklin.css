@@ -1,49 +1,109 @@
-body {
-    background-color: deepskyblue;
+    body {
+        background-color: deepskyblue;
+    }
+
+    header h1 {
+        display: inline;
+    }
+
+    .compname {
+        font-size: 55px;
+    }
+
+    nav {
+        font-size: 18px;
+        text-align: center;
+        background-color: burlywood;
+        border: solid #000000;
+    }
+
+    #town {
+        font-size: 30px;
+        box-sizing: content-box;
+        margin: 30px 0px 0px 0px;
+    }
+
+    #temphere {
+        font-size: 22px;
+        background-color: burlywood;
+        margin-top: 0px;
+        margin-bottom: 1em;
+        background-image: url(/images/sunnyday.png);
+        padding: 0em 0em 1.8em 0em;
+        margin-right: 1em;
+        margin-left: 1em;
+        width: 80%;
+    }
+
+    #hourly {
+        display: none;
+    }
+
+#location {
+    display: none;
 }
 
-header h1 {
-    display: inline;
+    #article {
+        font-size: 18px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #rex {
+        margin: 0em 1em 1em 1em;
+    }
+
+@media only screen and (min-width: 415px) {
+    .compname {
+        font-size: 8em;
+    }
+
+    nav {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #temphere {
+        width: 275px;
+        float: left;
+        display: inline;
+    }
+
+    #hourly {
+        overflow: scroll;
+        display: inline-block;
+        font-size: 25px;
+        background-color: burlywood;
+        background-image: url(/images/clouds.png);
+        padding: 0px;
+        border: 0px;
+        margin: 0px 20px 20px 20px;
+        padding: 0px 0px 80px 0px;
+        height: 115px;
+        width: 350px;
+    }
+
+    #location {
+        overflow: hidden;
+        display: inline-block;
+        font-size: 25px;
+        background-color: burlywood;
+        background-image: url(/images/clouds.png);
+        border: 0px;
+        margin: 0px 20px 20px 20px;
+        padding: 0px 0px 80px 0px;
+        height: 1px;
+        width: 350px;
+    }
 }
 
-.compname {
-    font-size: 55px;
-}
-
-
-nav {
-    font-size: 18px;
-    text-align: center;
-    background-color: burlywood;
-    border: solid #000000;
-
-}
-
-#town {
-    font-size: 30px;
-    box-sizing: content-box;
-    margin: 30px 0px 0px 0px;
-}
-
-#temphere {
-    font-size: 20px;
-    background-color: burlywood;
-    margin-top: 0px;
-    margin-bottom: 1em;
-    background-image: url(/images/sunnyday.png);
-    padding: 0em 0em 4em 0em;
-    margin-right: 1em;
-    margin-left: 1em;
-}
-
-#article {
-    font-size: 18px;
-}
-
-footer {
-    text-align: center;
-}
-
-#rex {
-    margin: 0em 1em 1em 1em;
+@media only screen and (min-width: 720px) {
+    #article {
+        font-size: 24px;
+    }
+    #temphere #hourly #location {
+        align-self: center;
+    }
 }
