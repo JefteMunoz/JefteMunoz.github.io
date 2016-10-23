@@ -6,6 +6,11 @@
         display: inline;
     }
 
+header img {
+    height: 125px;
+    width: 40%;
+}
+
     .compname {
         font-size: 55px;
     }
@@ -32,6 +37,7 @@
         margin-right: 1em;
         margin-left: 1em;
         width: 80%;
+        border: solid #000000;
     }
 
     #hourly {
@@ -62,9 +68,17 @@
         margin: 0em 1em 1em 1em;
     }
 
+#ipad, #largescreen {
+    display: none;
+}
+
 @media only screen and (min-width: 415px) {
     .compname {
         font-size: 8em;
+    }
+
+    header img {
+        width: 25%;
     }
 
     nav {
@@ -73,9 +87,10 @@
     }
 
     #temphere {
-        width: 275px;
+        width: 36%;
         float: left;
         display: inline;
+        height: 265px;
     }
 
     #hourly {
@@ -88,7 +103,8 @@
         margin: 0px 20px 20px 20px;
         padding: 0px 0px 80px 0px;
         height: 115px;
-        width: 350px;
+        width: 50%;
+        border: solid #000000;
     }
 
     #location {
@@ -100,7 +116,8 @@
         margin: 0px 20px 20px 20px;
         padding: 0px 0px 80px 0px;
         height: 1px;
-        width: 350px;
+        width: 50%;
+        border: solid #000000;
     }
 
     #article {
@@ -112,8 +129,10 @@
         padding: 0px;
         border: 0px;
         background-color: burlywood;
+        border: solid #000000;
     }
 }
+
 
 @media only screen and (min-width: 720px) {
     #article {
@@ -122,12 +141,32 @@
     #temphere #hourly #location {
         align-self: center;
     }
+
+    #rex {
+        display: none;
+    }
+
+    #ipad {
+        display: block;
+        width: 50%;
+        height: 350px;
+    }
 }
+
 
 @media only screen and (min-width: 1024px) {
     body {
         margin: 1em 8em 1em 8em;
     }
+
+    #temphere {
+        width: 30%;
+    }
+
+    #hourly, #location {
+        width: 30%;
+    }
+
 
     #article {
         display: block;
@@ -136,8 +175,17 @@
         height: 200px;
         margin: 0px;
         padding: 0px;
-        border: 0px;
         background-color: burlywood;
+    }
+
+    #ipad {
+        display: none;
+    }
+
+    #largescreen {
+        display: block;
+        widows: 60%;
+        height: 350px;
     }
 }
 
