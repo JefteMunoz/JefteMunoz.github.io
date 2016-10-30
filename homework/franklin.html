@@ -13,9 +13,11 @@
         <h1 class="compname"> RexNews </h1> </header>
     <nav> <a href="/index.html"> Student Homepage</a> | <a href="#"> Greenville </a> | <a href="#"> Springfield </a> </nav>
     <main>
-        <h3 id="town"> Franklin Town </h3>
-        <p id="temphere">
-            <br> <strong>City: Franklin<br>
+        <div id="wrapper">
+            <div class="info">
+                <h3 id="town"> Franklin Town </h3>
+                <p id="temphere">
+                    <br> <strong>City: Franklin<br>
                 State: ID<br>
                 High: 90<br>
                 Low: 66<br>
@@ -23,23 +25,50 @@
                 Wind: 1 - 5<br>
                 Direction: Southwest<br>
                 Summary: Sunny<br>
-                Zip: 83237<br> </strong> </p>
-        <p id="hourly">
-            <br> <strong> Hourly Temperatures: <br> <br> AM <br>
+            Zip: 83237<br> </strong> </p>
+            </div>
+            <div class="box">
+                <div class="hour">
+                    <h3> Hourly Temperatures </h3>
+                    <p id="hourly">
+                        <br> <strong> AM <br>
             12:00 - 67° <br> 1:00 - 67° <br> 2:00 - 69° <br> 3:00 - 69° <br> 4:00 - 69° <br> 5:00 - 70° <br> 6:00 - 69° <br> 7:00 - 72° <br> 8:00 - 74° <br> 9:00  - 77° <br> 10:00 - 79° <br> 11:00 - 81° <br> <br> PM <br>12:00 - 84° <br> 1:00 - 86° <br> 2:00 - 88° <br> 3:00 - 90° <br> 4:00 - 90° <br> 5:00 - 85° <br> 6:00 - 83° <br> 7:00 - 79° <br> 8:00 - 74° <br> 9:00 - 70° <br> 10:00 - 68° <br> 11:00 - 66° </strong> </p>
-        <p id="location"> <strong> Longitude: -111.803757 <br> <br>
-            Latitude: 42.011902 </strong> </p>
-        <div id="article">
-            <h3> Rex-report of the day: </h3>
-            <p> Use shorts, sandals and a tan, cause it is hot out there! Stay tuned for more Rex reports in Rex News! If you have any articles please email me. ;)
-                <br> - By Rex the reporter</p>
-            <h3> Other News </h3>
-            <p> Jeff woke up in a really bad mood. Why? He was starving. <br> - By Rexy "The Handsome Reporter" </p>
-            <h3> We are hiring! </h3>
-            <p> We need help in our weather company! Apply now! You'll definitely get hired. Seriously we need the help. <br> - T-Rex the Recruiter </p>
+                </div>
+                <div class="locate">
+                    <h3> Location </h3>
+                    <p id="location"> <strong> Longitude: -111.803757 <br> <br>
+                Latitude: 42.011902 </strong> </p>
+                </div>
+            </div>
+            <div class="video-report">
+                <h3> Watch Report </h3>
+                <img id="video-report" alt="it's sunny" src="../images/rexyreport.png">
+            </div>
         </div>
-        <h3> Wireframe (Change screen size for all wireframes to display) </h3> <img alt="rexnews wireframe" src="../images/rexnews.jpeg" width="320" height="320" id="rex"><img alt="Medium Screen Wireframe" src="../images/ipadwire.jpeg" id="ipad"> <img alt="Large Screen Wireframe" src="../images/largescreen.jpeg" id="largescreen"> </main>
-    <footer> <small> &copy;2016 | M. Jefté Munoz | Last Updated: 10/15/2016 </small> </footer>
+        <div class="article">
+            <div class="article-selection">
+                <div id="rex-report">
+                    <h3> Rex-report of the day: </h3>
+                    <p> Use shorts, sandals and a tan, cause it is hot out there! Stay tuned for more Rex reports in Rex News! If you have any articles please email me. ;)
+                        <br> - By Rex the reporter</p>
+                </div>
+                <div id="other">
+                    <h3> Other News </h3>
+                    <p> Jeff woke up in a really bad mood. Why? He was starving.
+                        <br> - By Rexy "The Handsome Reporter" </p>
+                </div>
+            </div>
+        </div>
+            <div id="hiring-report">
+            <h3 id="hire"> We are hiring! </h3>
+            <p> We need help in our weather company! Apply now! You'll definitely get hired. Seriously we need the help.
+                <br> - T-Rex the Recruiter </p>
+            </div>
+
+        <h3> Wireframe (Change screen size for all wireframes to display) </h3> <div class="wireframes"> <img alt="rexnews wireframe" src="../images/rexnews.jpeg" id="rex"><img alt="Medium Screen Wireframe" src="../images/ipadwire.jpeg" id="ipad"> <img alt="Large Screen Wireframe" src="../images/largescreen.jpeg" id="largescreen"> </div> </main>
+    <div class="end">
+    <footer> <small> &copy;2016 | M. Jefté Munoz | Last Updated: 10/29/2016 </small> </footer>
+    </div>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-    body {
+/*
+body {
         background-color: deepskyblue;
     }
 
@@ -189,3 +190,271 @@ header img {
     }
 }
 
+*/
+
+body {
+    background-color: deepskyblue;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.compname {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+
+img {
+    display: flex;
+    height: 125px;
+    width: 40%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 21px;
+    width: 100%;
+    justify-content: center;
+    border: solid #000000;
+    background-color: burlywood;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+#temphere {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    border: solid #000000;
+    font-size: 23px;
+    background-image: url(../../images/sunnyday.png);
+    width: 82%;
+    height: 13em;
+    margin: auto;
+}
+
+#hourly {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    border: solid #000000;
+    font-size: 23px;
+    margin-top: 0px;
+    height: 8em;
+    width: 82%;
+    margin: auto;
+    background-image: url(../../images/clouds.png);
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    border: solid #000000;
+    font-size: 23px;
+    margin-top: 1em;
+    height: 4em;
+    width: 82%;
+    margin: auto;
+    background-image: url(../../images/clouds.png);
+}
+
+#article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#article p {
+    font-size: 18px;
+}
+
+#ipad, #largescreen {
+    display: none;
+}
+
+#rex {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin: auto;
+}
+
+.video-report {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 720px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .compname {
+        font-size: 100px;
+    }
+
+    img {
+        width: 35%;
+        height: 150px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 400px;
+    }
+
+    #hourly {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #temphere {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+
+    .hour {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 240px;
+    }
+
+    .hour h3 {
+        margin-bottom: 5px;
+    }
+
+    .locate h3 {
+        margin-top: 0px;
+    }
+
+    .locate {
+        width: 100%;
+        height: 150px;
+    }
+
+    #location {
+        height: 90px;
+        margin-left: 0px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid #000000;
+        background-color: white;
+        width: 100%;
+
+    }
+
+    .article p {
+        font-size: 20px;
+    }
+
+    #hiring-report {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: solid #000000;
+        background-color: burlywood;
+        margin-top: 1em;
+        width: 100%;
+        font-size: 22px;
+    }
+
+    #rex {
+        display: none;
+    }
+
+    #ipad {
+        display: flex;
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .end {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .info {
+        width: 32%;
+    }
+
+    .box {
+        width: 38%;
+    }
+
+    .video-report {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .video-report #video-report {
+        width: 100%;
+        height: 298px;
+        border: solid #000000;
+    }
+
+    #ipad {
+        display: none;
+    }
+
+    #largescreen {
+        display: flex;
+        width: 400px;
+        height: 400px;
+    }
+}

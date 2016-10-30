@@ -1,3 +1,5 @@
+/*
+
 html *{
     box-sizing: border-box;
 }
@@ -25,6 +27,7 @@ body{
     padding: 0;
 }
 
+/*
 @media only screen and (min-width: 415px){
     #page-header {
         width: 100%;
@@ -54,4 +57,70 @@ body{
         clear: left;
     }
 }
+*/
+
+/*
+@media only screen and (min-width: 415px) {
+    #wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+}
+
+*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.alignthis {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+#page-aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-self: flex-start;
+}
+
+
+#page-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+/* #location {
+margin-top: 0px;
+}
+
+.locate h3 {
+margin-top: 0px;
+}
+
+.locate {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin-top: 0px;
+}
+*/
 
