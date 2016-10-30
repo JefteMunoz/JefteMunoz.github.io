@@ -296,7 +296,7 @@ h3 {
     display: none;
 }
 
-footer {
+.end {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -417,7 +417,8 @@ footer {
     .end {
         display: flex;
         flex-direction: row;
-        margin: auto;
+        width: 100%;
+        justify-content: center;
     }
 
 }
