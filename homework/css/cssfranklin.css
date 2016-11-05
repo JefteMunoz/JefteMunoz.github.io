@@ -255,7 +255,7 @@ h3 {
     height: 8em;
     width: 82%;
     margin: auto;
-    background-image: url(../../images/clouds.png);
+    background-color: burlywood;
 }
 
 #location {
@@ -267,7 +267,7 @@ h3 {
     height: 4em;
     width: 82%;
     margin: auto;
-    background-image: url(../../images/clouds.png);
+    background-color: burlywood;
 }
 
 #article {
