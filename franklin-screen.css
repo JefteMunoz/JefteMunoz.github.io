@@ -1,0 +1,138 @@
+/*
+
+h1 {
+    display: inline;
+    font-size: 28px;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+.sun{
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid black;
+    width: 25%;
+    height: 100%;
+}
+
+.hourly{
+    display: none;
+}
+
+.div-header {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+.table-header{
+    border: 1px solid black;
+}
+
+.table-body{
+    text-align: center;
+}
+
+#wireframes{
+    display: none;
+}
+
+@media screen and (min-width: 550px){
+    .table-header{
+        width: 400px;
+    }
+
+    main p{
+        display: inline-block;
+    }
+
+    main{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    #weather-info{
+        margin-top: 5px;
+        float: right;
+    }
+
+    .sun{
+        float: left;
+        height: 150px;
+    }
+
+    footer{
+        margin-top: 30%;
+    }
+
+}
+
+@media screen and (min-width: 700px){
+    .hourly{
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px){
+    #sunny, #weather-info{
+        display: inline-block;
+        width: 45%;
+    }
+
+    #weather-info{
+        margin-right: 75px;
+    }
+ .sun{ margin-left: 450px; } #wireframes{ display: block; } */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.sun{
+    width: 150px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#links ul {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+}
+
+
