@@ -1,0 +1,48 @@
+body {
+    background-image: url(../../images/homepage/spurswallpaper.jpeg);
+    margin: 2em;
+}
+
+.intro {
+    background-color: darkgray;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 20px 10px 20px 10px;
+    padding: 10px 20px 10px 10px;
+    margin: 20px 10px 10px 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: darkgray;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 20px 10px 20px 10px;
+    padding: 10px 20px 10px 10px;
+    margin: 20px 10px 10px 10px;
+}
+
+#assignments {
+    width: 20%;
+}
+
+#weather {
+    width: 20%;
+}
+
+#teaching {
+    width: 20%;
+}
+
+#projects {
+    width: 20%;
+}
+
