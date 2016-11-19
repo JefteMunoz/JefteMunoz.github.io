@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title> Loan Calculator </title>
+
+<script type="text/javascript">
+
+// Input: User will input information.
+// Processing: Program will compute using two functions.
+// Output: Payment and Balance will be outputed on screen.
+
+function doPayment (){
+	var borrowed = parseFloat(document.getElementById('AB').value);
+	var rate = parseFloat(document.getElementById('IR').value);
+	var years = parseFloat(document.getElementById('NY').value);
+	var ppp = parseFloat(document.getElementById('PPY').value);
+		var payment = computePayment (borrowed, rate, years, ppp);
+document.getElementById('output').value = payment;
+	
+}
+
+function doBalance (){
+	var borrowed = parseFloat(document.getElementById('AB').value);
+	var rate = parseFloat(document.getElementById('IR').value);
+	var years = parseFloat(document.getElementById('NY').value);
+	var ppp = parseFloat(document.getElementById('PPY').value);
+	var number = parseFloat(document.getElementById('NP').value);
+		var balance = computeBalance(borrowed, rate, years, ppp, number);
+document.getElementById('outputTwo').value = balance;
+
+}
+
+function computePayment(principal, annualRate, years, periodsPerYear){
+
+var r = annualRate / periodsPerYear;
+var n = -1 * years * periodsPerYear;
+	var paymentPerPeriod = (principal * r) / (1 - Math.pow((1 + r),n));
+	
+return paymentPerPeriod.toFixed(2);
+
+}
+ 
+function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate){
+
+var n = numberOfPaymentsPaidToDate;
+var r = annualRate / periodsPerYear;
+var p = parseFloat(document.getElementById('output').value);
+	var totalBalance = principal * Math.pow((1 + r), n) - p * (Math.pow((1 + r), n) - 1) / r;
+
+return totalBalance.toFixed(2);
+
+}
+
+</script>
+</head>
+<body>
+
+<h1> Loan Calculator </h1><br>
+
+<form>
+Amount Borrowed (Principal): <input type='text' id='AB'><br>
+Annual Interest Rate: <input type='text' id='IR'><br>
+Number of Years: <input type='text' id='NY'><br>
+Payments Per Year: <input type='text' id='PPY'><br>
+<button type='button' onclick='doPayment()'>Compute Payment</button> <input type='text' id='output'><br>
+Number of Payments Paid to Date <input type='text' id='NP'><br>
+<button type='button' onClick='doBalance()'>Compute Payoff Amount</button> <input type='text' id='outputTwo'><br>
+<button type='reset' onclick='reset()'>Reset</button>
+
+</form>
+
+</body>
+</html>

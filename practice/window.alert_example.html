@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>San Antonio Spurs will be NBA champions!</title>
+        <script type="text/javascript">
+            /* Defining Table
+ * Input: Name of team.
+ * Processing: Let him know spurs will win.
+ * Output: The message "Sorry, (name of team) won't win it, San Antonio will win it! Go Spurs Go!"
+ */
+            function showMessage() {
+                // This line will prompt the user to type in his name.
+                var name = window.prompt("Enter the name of the team that will win the NBA finals this year");
+
+                // Create a personalized message.
+                var message = "Sorry! " + name + " won't win it! San Antonio will. Go Spurs Go!";
+
+                // The next line of code causes the computer
+                // to open a popup window that contains the
+                // words "Sorry, name won't win it, San Antonio will win it! Go Spurs Go!"
+                window.alert(message);
+            }
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick="showMessage()">Message</button>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title> Select footwear</title>
+    <script type="text/javascript">
+        /*
+        Input: The user should input the type of weather. (Hot, Rain, Snow, or Other Weather)
+        Processing: Figure what footwear can be used according to the weather.
+        Output: Show footwear. (Sandals, Goloches, Boots, or Shoes)
+        */
+        function selectFootwear() {
+            //input
+            var weather = document.getElementById('weather').value;
+            weather = weather.toLowerCase();
+            var footwear;
+            //processing
+            if (weather == 'hot') {
+                footwear = 'sandals';
+            }
+            else if (weather == 'rain') {
+                footwear = 'goloches';
+            }
+            else if (weather == 'snow') {
+                footwear = 'boots';
+            }
+            else(footwear = 'shoes')
+                //output
+            document.getElementById('use').innerHTML = ' Use ' + footwear;
+        }
+    </script>
+</head>
+
+<body>
+    <h1> What should I use? </h1>
+    <br> Please enter current weather (Hot, Rain, Snow, or Other Weather.)
+    <input type='text' id='weather'>
+    <br>
+    <button type='button' onclick='selectFootwear()'>Please help me out!</button>
+    <br>
+    <div id='use'></div>
+</body>
+
+</html>
