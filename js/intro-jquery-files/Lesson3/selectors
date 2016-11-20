@@ -1,0 +1,6 @@
+$(function(){
+//jQuery code goes here
+$('#alcoveLogo').css('opacity', 0.4);
+
+$('.servicesBtn').css('color', '#FFF');
+})

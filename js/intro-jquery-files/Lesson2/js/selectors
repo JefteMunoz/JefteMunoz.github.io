@@ -1,0 +1,34 @@
+$(function(){
+//JQUERY READY METHOD FROM LINE 12 TO LINE 16
+// $(document).ready(function(){ }) the one below, in line 13, is the shortcut; same code.
+/*$(function () {
+// All jQuery code goes here
+//alert('Hello jQuery !!');
+})*/
+
+// used in the ready method, ID selector, Class selector, Tag selector window.onload = function (){
+//JQUERY ID SELECTOR EXAMPLE. LINE 20 & 21
+/* var element = document.getElementById('alcoveLogo');
+element.style.opacity = 0.2;*/
+
+//JQUERY CLASS SELECTOR EXAMPLE. LINE 23 & 29
+/*var element = document.getElementsByClassName('servicesBtn');
+for(var i = 0; < element.length; i++){
+if(i % 2 == 0) {
+element[i].style.color = 'rgb(0, 106, 255)';
+}
+}*/
+
+//JQUERY TAG SELECTOR EXAMPLE. LINE 32 & 39
+/*var element = document.getElementsByTagName('h2');
+
+for(var i = 0; i < element.length; i++){
+element[i].style.borderColor = 'rgb(255, 0, 0)';
+element[i].style.borderWidth = '2px';
+element[i].style.borderStyle = 'solid';
+element[i].style.backgroundColor = 'rgba(255, 0, 0.2)';
+}*/
+
+var element = document.querySelector('.navigation > li:nth-child(3) > a');
+element.style.color = 'rgb(255, 0, 0)';
+})

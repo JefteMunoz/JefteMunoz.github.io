@@ -1,0 +1,6 @@
+$(function(){
+//jQuery code goes here
+$('button').css('border', '1px solid red');
+
+$('h2').css('border', '1px solid red');
+})
