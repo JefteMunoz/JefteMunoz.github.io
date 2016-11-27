@@ -30,8 +30,8 @@ $(function () {
 
     //Function will that will display data
     function useData(data){
-        $("#cityDisplay").html(data['location']['city'] + "," + data['location']['state']);
-        document.title = data['location']['city'] + "," + data['location']['state'] + " | "+ document.title;
+        $("#cityDisplay").html(data['location']['city'] + " , " + data['location']['state']);
+        document.title = data['location']['city'] + " , " + data['location']['state'] + " | "+ document.title;
         $("#currentTemp").html(Math.round(data['current_observation']['temp_f']) + "&deg;F");
         $("#summary").html(toTitleCase(data['current_observation']['weather']));
         $("#add1").html(" Humidity " + data['current_observation']['relative_humidity']);
