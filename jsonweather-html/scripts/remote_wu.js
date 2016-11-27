@@ -28,7 +28,7 @@ $(function () {
 
     }
 
-    //A function to display source data
+    //A function to display data
     function useData(data){
         $("#cityDisplay").html(data['location']['city'] + "," + data['location']['state']);
         document.title = data['location']['city'] + "," + data['location']['state'] + " | "+ document.title;
@@ -36,7 +36,7 @@ $(function () {
         $("#summary").html(toTitleCase(data['current_observation']['weather']));
         $("#add1").html(data['current_observation']['relative_humidity'] + " Humidity");
         $("#add2").html(Math.round(data['current_observation']['wind_mph']) + "mph Winds");
-        $("#add3").html("Wind Direction: " + data['current_observation']['wind_dir']);
+        $("#add3").html("Wind " + data['current_observation']['wind_dir']);
         $("#cover").fadeOut(250);
     }
 
