@@ -46,6 +46,11 @@ main {
     background-color: aliceblue;
 }
 
+#weatherU {
+    width: 10%;
+    height: 5%;
+}
+
 @media only screen and (min-width: 720px) {
     .compname {
         font-size: 100px;
