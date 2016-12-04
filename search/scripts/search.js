@@ -1,3 +1,5 @@
+var info;
+
 $('#query').keyup(function(){
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
@@ -13,16 +15,17 @@ $('#query').keyup(function(){
                 $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
                     console.log(data); // test for JSON received
                     // Code to show info from search
-                    var info = '<ol>';
+                    info = data;
+                    var output = '<ol>';
                     $.each(data.RESULTS, function(key, val) {
                         if (val.name.search(rExp) != -1) {
-                            info += '<li>';
-                            info += '<a href="#" onclick="getData(' + val.lat + ','+val.lon+')" title="See results for ' + val.name + '">' + val.name + '</a>';
-                            info += '</li>';
+                            output += '<li>';
+                            output += '<a href="https://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                            output += '</li>';
                         }
                     }); // end each
-                    info += '</ol>';
-                    $("#searchResults").html(info); // send results to the page
+                    output += '</ol>';
+                    $("#searchResults").html(output); // send results to the page
 
                 }); // end getJSON
             } // end if there are characters in a query
