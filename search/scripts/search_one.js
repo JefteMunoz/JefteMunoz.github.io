@@ -27,7 +27,7 @@ function getData(input) {
             var summary = data.current_observation.weather;
             console.log("Location: " + location);
             console.log("Temperature: " + temp_f);
-            $("#city").text(location);
+            $("#h1").text(location);
             $("#title").html(location + " | Search");
             $("#temphigh").text("High: " + high + "°F");
             $("#templow").text("Low: " + low + "°F");
