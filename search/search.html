@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Search </title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../search/css/search.css" type="text/css" media="screen">
+    </head>
+    <body>
+        <header id="page-header"> </header>
+        <nav id="page-nav"> <noscript> Javascript is not enabled for navigation visit <a href="#"> Site Map</a> </noscript> </nav>
+        <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+            <input type="search" name="query" id="query">
+            <input type="submit" name="submit" value="Search" id="send">
+        </form>
+        <section id="searchResults">
+            <h3> Search Results </h3>
+            <main>
+                <section class="search-result">
+                    <section class="location">
+                        <div><span id="city-name"></span> </div>
+                    </section>
+                    <section class="conditions">
+                        <div><span id="temperature"> </span> "°"<sup>F</sup> </div>
+                        <div> <span id="conditions"> </span> </div>
+                        <div><span id="windDirection"> </span> </div>
+                    </section>
+                </section>
+            </main>
+        </section>
+    </body>
+    <footer id="page-footer" class="page-footer"> </footer>
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="scripts/search.js"> </script>
+    <script src="../js/practice.js"></script>
+    <script src="scripts/search_one.js"></script>
+</html>
