@@ -7,7 +7,7 @@
             * 4.
             * 5.
             * ******************************************** */
-var info;
+var returned;
 
 $('#query').keyup(function(){
     var value = $('#query').val();
@@ -24,7 +24,7 @@ $('#query').keyup(function(){
                 $.getJSON("https://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function(data) {
                     console.log(data); // test for JSON received
                     // Code to show info from search
-                    info = data;
+                    returned = data;
                     var output = '<ol>';
                     $.each(data.RESULTS, function(key, val) {
                         if (val.name.search(rExp) != -1) {

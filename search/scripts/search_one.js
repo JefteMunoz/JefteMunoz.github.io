@@ -7,7 +7,7 @@
             * 4.
             * 5.
             * ******************************************** */
-var info;
+var returned;
 
 
 // Get weather data from wunderground.com
@@ -38,6 +38,7 @@ function getData(input) {
     });
 }
 
+// Search bar search
 $('#query').keyup(function() {
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
@@ -45,7 +46,7 @@ $('#query').keyup(function() {
         console.log(data); // test for JSON received
         // Begin building output
 
-        info = data;
+        returned = data;
         var output = '<ol>';
         $.each(data.RESULTS, function(key, val) {
             if (val.name.search(rExp) != -1) {
@@ -59,7 +60,6 @@ $('#query').keyup(function() {
         output += '</ol>';
         $("#searchResults").html(output); // send results to the page
     }); // end getJSON
-    //$('#searchResults').css("display": "block");
 
 }); // end onke
 
@@ -74,7 +74,7 @@ $("#searchResults").on("click", "a", function (evt) {
     console.log(jsonCity);
     index = $(this).index("a");
 
-    getData(info.RESULTS[index].zmw) //probably made a mistake here
+    getData(returned.RESULTS[index].zmw) //probably made a mistake here
 
     document.getElementById("searchResults").style.display="none";
 
