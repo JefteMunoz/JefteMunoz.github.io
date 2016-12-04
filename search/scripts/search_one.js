@@ -27,11 +27,11 @@ function getData(input) {
             var summary = data.current_observation.weather;
             console.log("Location: " + location);
             console.log("Temperature: " + temp_f);
-            $("#city-name").text(location);
+            $("#city").text(location);
             $("#title").html(location + " | Search");
             $("#temphigh").text("High: " + high + "°F");
             $("#templow").text("Low: " + low + "°F");
-            $("#currenttemp").html(Math.round(temp_f) + '°');
+            $("#currenttemp").html(Math.round(tempF) + '°');
             $("#summary").text(toTitleCase(data.current_observation.icon));
             $("#cover").fadeOut(250);
         }
