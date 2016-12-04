@@ -22,7 +22,7 @@ $('#query').keyup(function(){
                         }
                     }); // end each
                     info += '</ol>';
-                    $("#searchResults").html(output); // send results to the page
+                    $("#searchResults").html(info); // send results to the page
 
                 }); // end getJSON
             } // end if there are characters in a query
