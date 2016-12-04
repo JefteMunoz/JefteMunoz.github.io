@@ -21,14 +21,14 @@ function getData(input) {
         , success: function (data) {
             console.log(data);
             var location = data.location.city + ', ' + data.location.state;
-            var temp_f = data.current_observation.temp_f;
+            var tempF = data.current_observation.temp_f;
             var high = Math.round(data.forecast.simpleforecast.forecastday[0].high.fahrenheit);
             var low = Math.round(data.forecast.simpleforecast.forecastday[0].low.fahrenheit);
             var summary = data.current_observation.weather;
             console.log("Location: " + location);
             console.log("Temperature: " + temp_f);
             $("#city-name").text(location);
-            $("#title").html(location + " | Weather Center");
+            $("#title").html(location + " | Search");
             $("#temphigh").text("High: " + high + "°F");
             $("#templow").text("Low: " + low + "°F");
             $("#currenttemp").html(Math.round(temp_f) + '°');
