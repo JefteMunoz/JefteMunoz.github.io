@@ -1,3 +1,12 @@
+/* *********************************************
+    API Key : 32af0ba83703c0f8
+        * Who Did You Collaborate With On This Assessment?
+            * 1. Jefte Munoz
+            * 2. Kristina Darroch
+            * 3.
+            * 4.
+            * 5.
+            * ******************************************** */
 var info;
 
 $('#query').keyup(function(){
