@@ -21,12 +21,12 @@ function getData(input) {
         , success: function (data) {
             console.log(data);
             var location = data.location.city + ', ' + data.location.state;
-            var tempF = data.current_observation.temp_f;
+            var tempF = data.current_observation.tempF;
             var high = Math.round(data.forecast.simpleforecast.forecastday[0].high.fahrenheit);
             var low = Math.round(data.forecast.simpleforecast.forecastday[0].low.fahrenheit);
             var summary = data.current_observation.weather;
             console.log("Location: " + location);
-            console.log("Temperature: " + temp_f);
+            console.log("Temperature: " + tempF);
             $("#h1").text(location);
             $("#title").html(location + " | Search");
             $("#temphigh").text("High: " + high + "°F");
