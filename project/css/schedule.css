@@ -51,12 +51,11 @@ body {
     background-color: black;
 }
 
-.big3 {
+#info {
     display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
+    flex-direction: row;
 }
+
 /*.menu li:hover {
 background-color: #0088cc;
 }*/
@@ -125,16 +124,6 @@ background-color: #0088cc;
         align-items: center;
     }
 
-    #pic_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-image: url(../../images/homepage/wallpaper.jpeg);
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-    }
 }
 
 /* large size screen */
@@ -144,28 +133,7 @@ background-color: #0088cc;
         margin: 3em;
         margin-top: 1em;
         margin-bottom: 1em;
-        font-size: 1.8em;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-image: url(../../images/homepage/wallpaper.jpeg);
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: 100%;
-    }
-
-
-    .big3 {
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-left: 0;
-        flex: 1 2 1;
+        font-size: 1.8em
     }
 
 }
