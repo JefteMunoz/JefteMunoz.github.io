@@ -29,7 +29,7 @@ $('#query').keyup(function(){
                     $.each(data.RESULTS, function(key, val) {
                         if (val.name.search(rExp) != -1) {
                             output += '<li>';
-                            output += '<a href="https://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                            output += '<a target="_blank" href="https://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                             output += '</li>';
                         }
                     }); // end each
