@@ -46,6 +46,10 @@ main {
     background-color: aliceblue;
 }
 
+.row {
+    text-align: center;
+}
+
 #weatherU {
     width: 10%;
     height: 5%;

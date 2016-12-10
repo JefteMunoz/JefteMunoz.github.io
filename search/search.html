@@ -1,42 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://jeftemunoz.github.io/search/search.html -->
 <html>
-    <head>
-        <!-- *********************************************
-API Key : 32af0ba83703c0f8
-* Who Did You Collaborate With On This Assessment?
-* 1. Jefte Munoz
-* 2. Kristina Darroch
-* 3.
-* 4.
-* 5.
-* ******************************************** -->
-        <meta charset="utf-8">
-        <title> Search </title>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="../search/css/search.css" type="text/css" media="screen">
-    </head>
-    <body>
-        <header id="page-header"> </header>
-        <nav id="page-nav"> <noscript> Javascript is not enabled for navigation visit <a href="#"> Site Map</a> </noscript> </nav>
-        <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
-            <input type="search" name="query" id="query">
-            <input type="submit" name="submit" value="Search" id="send">
-        </form>
-        <h3> Search Results </h3>
-        <section id="searchResults"> </section>
-        <main>
-            <div id="h1"> </h1>
-            <div id="temphigh"> </div>
-            <div id="templow"> </div>
-            <div id="currentTemp"> </div>
-            <div id="summary"> </div>
-        </main>
+<head>
+    <!-- *********************************************
+    API Key : 32af0ba83703c0f8
+    * Who Did You Collaborate With On This Assessment?
+    * 1. Jefte Munoz
+    * 2. Kristina Darroch
+    * 3.
+    * 4.
+    * 5.
+    * ******************************************** -->
+    <meta charset="utf-8">
+    <title> Search </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/search.css" type="text/css" media="screen">
+</head>
+<body>
+    <header id="page-header">
+        <a target="_blank" href="https://www.wunderground.com/q/zmw:00000.1.WMMCV" title="See results for Ciudad Victoria, Mexico">Ciudad Victoria, Mexico</a>
+    </header>
+    <nav id="page-nav">
 
-    </body>
-    <footer id="page-footer" class="page-footer"> </footer>
+    </nav>
+    <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+        <input type="search" name="query" id="query">
+        <input type="submit" name="submit" value="Search" id="send">
+    </form>
+    <h3> Search Results </h3>
+    <section id="searchResults"> </section>
+    <main>
+        <div id="h1" class="row">
+            <div id="currentCity" class="col-lg-6"> </div>
+            <div id="currentTemp" class="col-lg-6"> </div>
+            <div id="temphigh" class="col-lg-6">
+                High 0°
+                <br>
+                Low 0°
+            </div>
+            <div>
+                <span id="templow">
+                    0.0
+                </span>
+                mph
+                <span id="windDirection">WNW</span>
+                <br>
+                <span id="summaryDescription"> </span>
+
+            </div>
+        </div>
+        <div id="page-nav">
+            <script>
+                if (document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/') + 1).slice(0, -5) + "Link")) {
+                    document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/') + 1).slice(0, -5) + "Link").className = "selectedCity";
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer id="page-footer" class="page-footer">
+
+    </footer>
+
     <script src="scripts/jquery-3.0.0.min.js"></script>
-    <script src="scripts/search.js"> </script>
-    <script src="scripts/search_one.js"></script>
-    <script src="../js/practice.js"></script>
+    <script src="scripts_search/search.js"> </script>
+    <script src="scripts_search/search_one.js"></script>
+    <script src="scripts_search/practice.js"></script>
+</body>
 </html>
