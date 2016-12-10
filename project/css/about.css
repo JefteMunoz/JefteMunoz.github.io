@@ -52,6 +52,49 @@ body {
     background-color: black;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#head {
+    background-color: grey;
+    margin-bottom: 0px;
+}
+
+#coaching_staff {
+    font-size: 20px;
+}
+
+#popovich {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#coach {
+    border: solid;
+    background-color: black;
+    width: 210px;
+}
+
+#coach_name {
+    background-color: grey;
+}
+
+#atnt_400 {
+    display: none;
+}
+
 
 /*.menu li:hover {
 background-color: #0088cc;
@@ -122,6 +165,30 @@ background-color: #0088cc;
         align-items: center;
     }
 
+    #location {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #address_stadium {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #atnt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    #atnt_230 {
+        display: none;
+        align-self: flex-end;
+    }
+
+    #atnt_400 {
+        display: inline;
+    }
 }
 
 /* large size screen */
