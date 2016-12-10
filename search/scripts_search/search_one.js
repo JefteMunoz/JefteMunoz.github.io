@@ -32,16 +32,13 @@ function getData(lat, long) {
 //A function to display source data
 function useData(data) {
     console.log(data);
-    $("#rainInch").html(Math.round(data['current_observation']["precip_today_in"]));
     $("#templow").html(data['current_observation']["wind_mph"]);
     $("#windDirection").html(data['current_observation']["wind_dir"]);
-    $("#celsius").html(data['current_observation']["temp_c"]);
     $("#summaryDescription").html(toTitleCase(data['current_observation']['weather']))
     $("#currentCity").html(data['location']['city'] + ", " + data['location']['state']);
     document.title = data['location']['city'] + ", " + data['location']['state'] + " | " + document.title;
     $("#currentTemp").html(Math.round(data['current_observation']['temp_f']) + "&deg;");
     console.log("https://icons-ak.wxug.com/i/c/k/" + data['current_observation']['icon'] + ".gif");
-    $("#currentSummary").attr('src', "https://icons-ak.wxug.com/i/c/k/" + data['current_observation']['icon'] + ".gif");
     $("#temphigh").html("High " + data['forecast']['simpleforecast']['forecastday']['0']['high']['fahrenheit'] + "&deg;<br>Low " + data['forecast']['simpleforecast']['forecastday']['0']['low']['fahrenheit'] + "&deg;");
 }
 
