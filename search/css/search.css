@@ -55,6 +55,15 @@ main {
     height: 5%;
 }
 
+.row {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#currentCity {
+    font-size: 25px;
+}
+
 @media only screen and (min-width: 720px) {
     .compname {
         font-size: 100px;
