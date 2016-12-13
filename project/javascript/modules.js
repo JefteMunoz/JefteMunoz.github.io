@@ -1,5 +1,11 @@
-$(function(){
-    $('#page-header').load('../modules/header.html');
-    $('#page-nav').load('../modules/nav.html');
-    $('#page-footer').load('../modules/footer.html');
+/*
+$(function() {
+$("#page-header").load("");
+$("#page-nav").load("");
+$("#page-footer").load("");
+});
+*/
+
+
+$(function() {
 });
